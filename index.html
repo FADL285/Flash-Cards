@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="clear" class="clear btn">
+      <i class="fas fa-trash"></i>
+      Clear Cards
+    </button>
+
+    <div class="heading">
+      <h1>Flash Cards</h1>
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i> Add New Card
+      </button>
+    </div>
+
+    <div id="cards-container" class="cards">
+      <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">What is JavaScript?</div>
+          <div class="inner-card-back">
+            Programming languages
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">What is Python?</div>
+          <div class="inner-card-back">
+            Programming languages
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">What is C++?</div>
+          <div class="inner-card-back">
+            Programming languages
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button id="prev" class="nav-btn">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button id="next" class="nav-btn">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Add Form -->
+    <div id="add-container" class="add-container">
+      <div class="heading">
+        <h1>Add New Card</h1>
+        <button id="hide" class="btn btn-small-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Enter Question..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
+      </div>
+
+      <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i> Add Card
+      </button>
+    </div>
+
+    <!-- //////////////////// -->
+    <script src="app.js"></script>
+  </body>
+</html>
