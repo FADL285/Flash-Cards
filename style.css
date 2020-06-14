@@ -110,12 +110,12 @@ body {
 }
 
 .inner-card-front {
-  transform: translateX(0deg);
+  transform: rotateX(0deg);
   z-index: 2;
 }
 
 .inner-card-back {
-  transform: translateX(180deg);
+  transform: rotateX(180deg);
 
 }
 
@@ -137,11 +137,15 @@ body {
   margin: 20px 0;
 }
 
-.navigation .nav-button {
+.navigation .nav-btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
   font-size: 16px;
+}
+
+.navigation .nav-btn:disabled {
+  cursor: no-drop;
 }
 
 .navigation p {
